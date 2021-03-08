@@ -32,6 +32,12 @@ update ~/.ssh/config to include the following:
       StrictHostKeyChecking no
       ForwardAgent yes
 
+### make sure you have the below versions for vagrant plugins (vagrant windows)
+```
+vagrant plugin uninstall vagrant-vbguest
+vagrant plugin install vagrant-vbguest --plugin-version 0.21
+```
+
 Run the following to create cluster of VMs.
 ```
 vagrant up
